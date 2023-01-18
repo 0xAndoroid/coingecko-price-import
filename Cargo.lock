@@ -164,7 +164,7 @@ dependencies = [
 
 [[package]]
 name = "coingecko-price-import"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "reqwest",
  "rocket",

@@ -15,7 +15,7 @@ You might encounter some errors, and you might need to install some packages, li
 Also, if you are compiling on linux, you have to have openssl installed.
 
 ## Free endpoint
-I am hostig an endpoint on AWS right now (at the time of writing this readme). You can use it, if you want to, but if it will have a lot of traffic, I'll add auth and limitations.
+I am hostig an endpoint on AWS right now (at the time of writing this readme). You can use it, if you want to, but if it  lot of traffic, I'll add auth and limitations.
 It's available on
 ```
 http://coingecko.tretyakov.xyz:1234/price
@@ -28,3 +28,5 @@ So, full link would look like this
 ```
 http://coingecko.tretyakov.xyz:1234/price?ids_=bitcoin,ethereum&vs_=usd,aud
 ```
+
+

@@ -10,7 +10,13 @@ async fn price(ids_: Option<&str>, vs_: Option<&str>) -> String {
     reqwest::get(url).await.unwrap().text().await.unwrap()
 }
 
+#[get("/binance?<symbol>")]
+async fn binance(symbol: Option<&str>) -> String {
+    let url = format!("https://api.binance.com/api/v3/avgPrice?symbol={}", symbol.unwrap());
+    reqwest::get(url).await.unwrap().text().await.unwrap()
+}
+
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![price])
+    rocket::build().mount("/", routes![price, binance])
 }
