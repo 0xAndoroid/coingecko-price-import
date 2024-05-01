@@ -38,12 +38,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "alloy"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8369e4e3a70a23edc43dffd87b3222799911ac8ec9921f5decf58c7d55b2a8e4"
-
-[[package]]
 name = "async-stream"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -172,7 +166,6 @@ dependencies = [
 name = "coingecko-price-import"
 version = "0.1.1"
 dependencies = [
- "alloy",
  "reqwest",
  "rocket",
 ]
