@@ -1,8 +1,8 @@
 # CoinGecko Price Import
-This repo containes a simple webserver written in Rust using Rocket to import live prices of cryptocurrencies into Google Sheets  
+This repo contains a simple webserver written in Rust using Rocket to import live prices of cryptocurrencies into Google Sheets  
 
 ## Why?
-I've tried importing prices into Google sheets directly, but aparently, CoinGecko has placed limitations for
+I've tried importing prices into Google sheets directly, but apparently, CoinGecko has placed limitations for
 Google's IP addresses because there were a lot of requests (no surprise, google sends all requests from all google sheets from single set of IPs).  
 This webserver serves as a middleman between google sheets and coingecko, so that requests to coingecko come from an IP other than Google's.
 
